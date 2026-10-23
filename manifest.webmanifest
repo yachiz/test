@@ -1,0 +1,25 @@
+{
+  "name": "Aurora Atlas｜北歐極光 12 日旅行手冊",
+  "short_name": "極光旅行",
+  "description": "芬蘭、挪威、瑞典 12 日旅行互動手冊",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f8f8",
+  "theme_color": "#0b1e2a",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

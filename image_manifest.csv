@@ -1,0 +1,44 @@
+﻿圖片檔案,介面圖片識別名稱,顯示位置／主題,備註
+aurora_night_sky.jpg,aurora,極光主視覺；首頁標頭／極光相簿／Day 9 主圖,原本內嵌的 AI 情境示意圖
+day02_stockholm_city_hall.jpg,stockholm,Day 2 斯德哥爾摩市政廳／黃金廳,原本內嵌的 AI 情境示意圖
+day03_lulea_harbor.jpg,lulea,Day 3 露利亞港口,原本內嵌的 AI 情境示意圖
+day03_reindeer_farm.jpg,reindeer,Day 3 馴鹿牧場（當日主圖）,原本內嵌的 AI 情境示意圖
+day03_snowexperience365.jpg,snow,Day 3 凱米冰雪體驗館,原本內嵌的 AI 情境示意圖
+day03_seaside_glass_villas.jpg,glass,Day 3 海濱玻璃別墅,原本內嵌的 AI 情境示意圖
+day04_santa_claus_village.jpg,santa,Day 4–5 聖誕老人村（該日主圖）,原本內嵌的 AI 情境示意圖
+day09_arctic_cathedral.jpg,church,Day 9 特羅姆瑟北極大教堂,原本內嵌的 AI 情境示意圖
+day08_alta_rock_art.jpg,alta,Day 7–8 阿爾塔岩畫（該日主圖）,原本內嵌的 AI 情境示意圖
+day06_king_crab.jpg,crab,Day 6 基爾克內斯帝王蟹（該日主圖）,原本內嵌的 AI 情境示意圖
+day10_oslo_opera_house.jpg,osloOpera,Day 10 奧斯陸歌劇院（該日主圖）,原本內嵌的 AI 情境示意圖
+day10_oslo_city_hall.jpg,osloCity,Day 10 奧斯陸市政廳,原本內嵌的 AI 情境示意圖
+day10_akershus_fortress.jpg,osloFort,Day 10 阿克斯胡斯城堡,原本內嵌的 AI 情境示意圖
+day10_norwegian_food.jpg,osloFood,Day 10 挪威料理（相簿）,原本內嵌的 AI 情境示意圖
+day02_fika_coffee.jpg,fika,Day 2 瑞典 Fika 咖啡文化,暫以 day03_lulea_harbor.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day04_rovaniemi_city_plan.jpg,rovaniemi,Day 4–5 羅瓦涅米城市與鹿角城市計畫,暫以 day04_santa_claus_village.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day04_arktikum_museum.jpg,arktikum,Day 4–5 Arktikum 極圈博物館,暫以 aurora_night_sky.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day06_kirkenes_wartime_history.jpg,kirkenesHistory,Day 6 基爾克內斯二戰歷史,暫以 day03_lulea_harbor.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day07_sami_culture.jpg,sami,Day 7–8 薩米文化與 Joik,暫以 day03_reindeer_farm.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day09_tromso_city_mcdonalds.jpg,tromsoCity,Day 9 特羅姆瑟城市與麥當勞,暫以 day03_lulea_harbor.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day09_aurora_cruise.jpg,auroraCruise,Day 9 峽灣極光船,暫以 aurora_night_sky.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day10_aker_brygge_waterfront.jpg,akerBrygge,Day 10 Aker Brygge 海港,暫以 day10_akershus_fortress.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day10_munch_museum.jpg,munch,Day 10 孟克與《吶喊》,暫以 day10_oslo_opera_house.jpg 的示意圖作為預設；建議自行換成該景點實拍
+day10_vigeland_park.jpg,vigeland,Day 10 維格蘭雕塑公園,暫以 day10_oslo_city_hall.jpg 的示意圖作為預設；建議自行換成該景點實拍
+food/day02_swedish_meatballs.jpg,food_d2_0,d2｜美食與伴手禮：瑞典肉丸,圖片佔位符；請覆蓋同名 JPG 照片
+food/day02_dala_horse.jpg,food_d2_1,d2｜美食與伴手禮：達拉木馬,圖片佔位符；請覆蓋同名 JPG 照片
+food/day03_reindeer_culture.jpg,food_d3_0,d3｜美食與伴手禮：馴鹿文化,圖片佔位符；請覆蓋同名 JPG 照片
+food/day03_fazer_blue.jpg,food_d3_1,d3｜美食與伴手禮：Fazer Blue,圖片佔位符；請覆蓋同名 JPG 照片
+food/day04_salmon_soup.jpg,food_d45_0,d45｜美食與伴手禮：鮭魚濃湯,圖片佔位符；請覆蓋同名 JPG 照片
+food/day04_kuksa_cup.jpg,food_d45_1,d45｜美食與伴手禮：Kuksa 木杯,圖片佔位符；請覆蓋同名 JPG 照片
+food/day04_cloudberry_jam.jpg,food_d45_2,d45｜美食與伴手禮：雲莓果醬,圖片佔位符；請覆蓋同名 JPG 照片
+food/day06_king_crab_dish.jpg,food_d6_0,d6｜美食與伴手禮：現煮帝王蟹,圖片佔位符；請覆蓋同名 JPG 照片
+food/day06_crab_safari.jpg,food_d6_1,d6｜美食與伴手禮：捕蟹體驗,圖片佔位符；請覆蓋同名 JPG 照片
+food/day07_reindeer_stew.jpg,food_d78_0,d78｜美食與伴手禮：馴鹿燉湯,圖片佔位符；請覆蓋同名 JPG 照片
+food/day07_sami_bracelet.jpg,food_d78_1,d78｜美食與伴手禮：薩米錫絲手環,圖片佔位符；請覆蓋同名 JPG 照片
+food/day09_brunost.jpg,food_d9_0,d9｜美食與伴手禮：棕起司,圖片佔位符；請覆蓋同名 JPG 照片
+food/day09_waffles.jpg,food_d9_1,d9｜美食與伴手禮：挪威鬆餅,圖片佔位符；請覆蓋同名 JPG 照片
+food/day10_fiskesuppe.jpg,food_d10_0,d10｜美食與伴手禮：挪威魚湯,圖片佔位符；請覆蓋同名 JPG 照片
+food/day10_brunost_waffles.jpg,food_d10_1,d10｜美食與伴手禮：棕起司鬆餅,圖片佔位符；請覆蓋同名 JPG 照片
+food/day10_polse_lompe.jpg,food_d10_2,d10｜美食與伴手禮：馬鈴薯薄餅熱狗,圖片佔位符；請覆蓋同名 JPG 照片
+food/day10_skolebrod.jpg,food_d10_3,d10｜美食與伴手禮：奶黃椰絲麵包,圖片佔位符；請覆蓋同名 JPG 照片
+food/day10_farikol.jpg,food_d10_4,d10｜美食與伴手禮：羊肉高麗菜燉鍋,圖片佔位符；請覆蓋同名 JPG 照片
+food/day10_cheese_slicer.jpg,food_d10_5,d10｜美食與伴手禮：棕起司與起司刨刀,圖片佔位符；請覆蓋同名 JPG 照片
