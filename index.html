@@ -133,23 +133,96 @@ img{max-width:100%}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
 
-/* Preserve the full composition of user-supplied photos. */
-.feature-photo,.spot-photo,.overview-cover{
-  background-size:contain;background-repeat:no-repeat;background-position:center;
-  background-color:#e8efee;
-}
-.feature-photo,.spot-photo{height:auto;aspect-ratio:4/3}
-.overview-cover{height:auto;aspect-ratio:4/3}
-.gallery-tile img,.photo-card img{
-  height:auto;aspect-ratio:4/3;object-fit:contain;background:#e8efee;
-}
-.food-picture img{object-fit:contain;background:#e8efee}
-.food-picture:hover img{transform:none}
-@media(max-width:720px){
-  .feature-photo,.spot-photo{height:auto;aspect-ratio:4/3}
-  .overview-cover,.gallery-tile img,.photo-card img{height:auto;aspect-ratio:4/3}
-}
 
+/* Individual focal points; adjust x/y percentages here when replacing a photo. */
+.feature-photo,.spot-photo,.overview-cover{background-size:cover;background-repeat:no-repeat;background-position:center}
+.feature-photo{height:auto;aspect-ratio:16/9}.spot-photo{height:auto;aspect-ratio:16/10}
+.overview-cover{height:auto;aspect-ratio:16/9}
+.gallery-tile img,.photo-card img{height:auto;aspect-ratio:4/3;object-fit:cover}
+.food-picture img{object-fit:cover}.food-picture:hover img{transform:scale(1.055)}
+[data-photo="stockholm"]{background-position:50% 48%}
+[data-photo="stockholm"] img{object-position:50% 48%}
+[data-photo="fika"]{background-position:60% 48%}
+[data-photo="fika"] img{object-position:60% 48%}
+[data-photo="lulea"]{background-position:50% 38%}
+[data-photo="lulea"] img{object-position:50% 38%}
+[data-photo="reindeer"]{background-position:72% 58%}
+[data-photo="reindeer"] img{object-position:72% 58%}
+[data-photo="snow"]{background-position:48% 48%}
+[data-photo="snow"] img{object-position:48% 48%}
+[data-photo="glass"]{background-position:50% 60%}
+[data-photo="glass"] img{object-position:50% 60%}
+[data-photo="rovaniemi"]{background-position:50% 50%}
+[data-photo="rovaniemi"] img{object-position:50% 50%}
+[data-photo="arktikum"]{background-position:50% 58%}
+[data-photo="arktikum"] img{object-position:50% 58%}
+[data-photo="santa"]{background-position:58% 52%}
+[data-photo="santa"] img{object-position:58% 52%}
+[data-photo="crab"]{background-position:50% 32%}
+[data-photo="crab"] img{object-position:50% 32%}
+[data-photo="kirkenesHistory"]{background-position:50% 50%}
+[data-photo="kirkenesHistory"] img{object-position:50% 50%}
+[data-photo="sami"]{background-position:62% 42%}
+[data-photo="sami"] img{object-position:62% 42%}
+[data-photo="alta"]{background-position:50% 50%}
+[data-photo="alta"] img{object-position:50% 50%}
+[data-photo="church"]{background-position:50% 66%}
+[data-photo="church"] img{object-position:50% 66%}
+[data-photo="tromsoCity"]{background-position:50% 68%}
+[data-photo="tromsoCity"] img{object-position:50% 68%}
+[data-photo="auroraCruise"]{background-position:48% 53%}
+[data-photo="auroraCruise"] img{object-position:48% 53%}
+[data-photo="osloOpera"]{background-position:50% 62%}
+[data-photo="osloOpera"] img{object-position:50% 62%}
+[data-photo="osloFort"]{background-position:50% 48%}
+[data-photo="osloFort"] img{object-position:50% 48%}
+[data-photo="osloCity"]{background-position:50% 52%}
+[data-photo="osloCity"] img{object-position:50% 52%}
+[data-photo="akerBrygge"]{background-position:50% 57%}
+[data-photo="akerBrygge"] img{object-position:50% 57%}
+[data-photo="munch"]{background-position:60% 55%}
+[data-photo="munch"] img{object-position:60% 55%}
+[data-photo="vigeland"]{background-position:45% 55%}
+[data-photo="vigeland"] img{object-position:45% 55%}
+[data-photo="food_d2_0"]{background-position:50% 62%}
+[data-photo="food_d2_0"] img{object-position:50% 62%}
+[data-photo="food_d2_1"]{background-position:62% 58%}
+[data-photo="food_d2_1"] img{object-position:62% 58%}
+[data-photo="food_d3_0"]{background-position:50% 57%}
+[data-photo="food_d3_0"] img{object-position:50% 57%}
+[data-photo="food_d3_1"]{background-position:50% 50%}
+[data-photo="food_d3_1"] img{object-position:50% 50%}
+[data-photo="food_d45_0"]{background-position:50% 54%}
+[data-photo="food_d45_0"] img{object-position:50% 54%}
+[data-photo="food_d45_1"]{background-position:45% 64%}
+[data-photo="food_d45_1"] img{object-position:45% 64%}
+[data-photo="food_d45_2"]{background-position:50% 55%}
+[data-photo="food_d45_2"] img{object-position:50% 55%}
+[data-photo="food_d6_0"]{background-position:50% 50%}
+[data-photo="food_d6_0"] img{object-position:50% 50%}
+[data-photo="food_d6_1"]{background-position:50% 28%}
+[data-photo="food_d6_1"] img{object-position:50% 28%}
+[data-photo="food_d78_0"]{background-position:55% 50%}
+[data-photo="food_d78_0"] img{object-position:55% 50%}
+[data-photo="food_d78_1"]{background-position:55% 57%}
+[data-photo="food_d78_1"] img{object-position:55% 57%}
+[data-photo="food_d9_0"]{background-position:50% 60%}
+[data-photo="food_d9_0"] img{object-position:50% 60%}
+[data-photo="food_d9_1"]{background-position:50% 55%}
+[data-photo="food_d9_1"] img{object-position:50% 55%}
+[data-photo="food_d10_0"]{background-position:50% 50%}
+[data-photo="food_d10_0"] img{object-position:50% 50%}
+[data-photo="food_d10_1"]{background-position:50% 50%}
+[data-photo="food_d10_1"] img{object-position:50% 50%}
+[data-photo="food_d10_2"]{background-position:50% 58%}
+[data-photo="food_d10_2"] img{object-position:50% 58%}
+[data-photo="food_d10_3"]{background-position:50% 60%}
+[data-photo="food_d10_3"] img{object-position:50% 60%}
+[data-photo="food_d10_4"]{background-position:50% 50%}
+[data-photo="food_d10_4"] img{object-position:50% 50%}
+[data-photo="food_d10_5"]{background-position:58% 55%}
+[data-photo="food_d10_5"] img{object-position:58% 55%}
+@media(max-width:720px){.feature-photo{height:auto;aspect-ratio:16/9}.spot-photo{height:auto;aspect-ratio:4/3}}
 </style>
 </head>
 <body><div class="shell"><header class="topbar"><div class="brand"><span class="brand-icon">✦</span><span>AURORA ATLAS <span style="font-weight:500;color:#77919d;font-size:12px;margin-left:5px">北歐旅行手帳</span></span></div><div class="top-tag">SWEDEN · FINLAND · NORWAY</div></header><section class="hero"><div class="eyebrow">ARCTIC JOURNAL · 12 DAYS</div><h1>沿著極光，走進北方的故事。</h1><p>從瑞典的諾貝爾殿堂，到芬蘭馴鹿與雪城堡，再走向挪威峽灣。按日期探索每個停靠點、打開隱藏的歷史趣聞，留下自己的北歐旅行收藏。</p><div class="hero-stats"><span class="stat"><b>12</b> 日 · 11/03–11/14</span><span class="stat"><b>3</b> 個北歐國家</span><span class="stat"><b>7</b> 晚追光（原行程描述）</span></div></section><nav class="tabs" id="tabs" aria-label="探索分類"></nav><div class="mobile-daynav" id="mobileDayNav"></div><div class="layout"><aside class="panel left"><div class="panel-title">YOUR JOURNEY · 行程日期</div><div class="daynav" id="dayNav"></div></aside><main class="primary"><div class="panel chapter" id="content"></div></main><aside class="right"><div class="panel side-card"><div class="panel-title">ROUTE OVERVIEW · 路線</div><div class="mini-route" id="route"></div></div><div class="panel side-card"><h3>✦ 我的旅行探索進度</h3><div id="sideProgress" class="hint"></div><div class="bar" style="margin:11px 0"><span id="sideBar" style="width:0"></span></div><button type="button" class="ghost-btn" onclick="navigate('checklist')">查看旅行清單 ↗</button></div></aside></div></div><div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="圖片放大檢視"><button type="button" class="lightbox-close" data-close-photo aria-label="關閉圖片">×</button><div class="lightbox-inner"><img id="lightboxImg" alt="旅行圖片"/><div class="lightbox-bottom"><span id="lightboxTitle"></span></div></div></div><script>
@@ -214,8 +287,8 @@ const groups=[
     "country": "瑞典 SWEDEN",
     "title": "在諾貝爾殿堂，聽紅磚說故事",
     "subtitle": "這個城市的藍廳其實不是藍色，黃金廳裡則藏著瑞典對世界的想像。",
-    "img": "images/day02_stockholm_city_hall.jpg",
-    "photo": "斯德哥爾摩市政廳・黃金廳",
+    "img": "images/covers/day02_cover.jpg",
+    "photo": "斯德哥爾摩",
     "spots": [
       {
         "name": "斯德哥爾摩市政廳",
@@ -254,8 +327,8 @@ const groups=[
     "country": "瑞典 → 芬蘭",
     "title": "馴鹿、冰雪城堡與海濱玻璃屋",
     "subtitle": "先抵達露利亞，再前往馴鹿牧場、冰雪體驗館，最後入住凱米海濱玻璃別墅。",
-    "img": "images/day03_reindeer_farm.jpg",
-    "photo": "Day 3・拉普蘭馴鹿文化與冰雪旅程",
+    "img": "images/covers/day03_cover.jpg",
+    "photo": "露利亞 → 凱米",
     "spots": [
       {
         "name": "① 抵達露利亞 Luleå",
@@ -306,8 +379,8 @@ const groups=[
     "country": "芬蘭 FINLAND",
     "title": "走訪哈士奇牧場，認識北極生活",
     "subtitle": "哈士奇牧場 → Arktikum 科學博物館，夜宿羅瓦涅米。",
-    "img": "images/day04_arktikum_museum.jpg",
-    "photo": "羅瓦涅米・Arktikum",
+    "img": "images/day04_rovaniemi_city_plan.jpg",
+    "photo": "羅瓦涅米・城市風景",
     "spots": [
       {
         "name": "哈士奇牧場 Husky Farm",
@@ -346,8 +419,8 @@ const groups=[
     "country": "芬蘭 FINLAND",
     "title": "跨越北極圈，前往薩利色爾卡",
     "subtitle": "聖誕老人村 → 薩利色爾卡，入住 Holiday Club Saariselkä。",
-    "img": "images/day04_santa_claus_village.jpg",
-    "photo": "羅瓦涅米・聖誕老人村",
+    "img": "images/covers/day05_cover.jpg",
+    "photo": "聖誕老人村 → 薩利色爾卡",
     "spots": [
       {
         "name": "聖誕老人村與北極圈線",
@@ -375,8 +448,8 @@ const groups=[
     "country": "挪威 NORWAY",
     "title": "來自太平洋的帝王蟹，改寫北極海",
     "subtitle": "從冷戰時期的物種引入，到今天的海鮮餐桌，基爾克內斯有一段意外的故事。",
-    "img": "images/day06_king_crab.jpg",
-    "photo": "基爾克內斯・帝王蟹體驗",
+    "img": "images/covers/day06_cover.jpg",
+    "photo": "基爾克內斯・帝王蟹",
     "spots": [
       {
         "name": "帝王蟹體驗",
@@ -415,8 +488,8 @@ const groups=[
     "country": "挪威 NORWAY",
     "title": "在卡拉紹克認識薩米文化",
     "subtitle": "Karasjok → Sápmi Park → 阿爾塔，入住 Scandic Alta。",
-    "img": "images/day07_sami_culture.jpg",
-    "photo": "薩米文化",
+    "img": "images/covers/day07_cover.jpg",
+    "photo": "卡拉紹克・Sápmi Park",
     "spots": [
       {
         "name": "Karasjok 卡拉紹克",
@@ -455,8 +528,8 @@ const groups=[
     "country": "挪威 NORWAY",
     "title": "北極光大教堂與阿爾塔博物館",
     "subtitle": "北極光大教堂 → 阿爾塔博物館 → 特羅姆瑟，入住 Thon Hotel Tromsø。",
-    "img": "images/day08_alta_rock_art.jpg",
-    "photo": "阿爾塔・史前馴鹿岩畫",
+    "img": "images/covers/day08_cover.jpg",
+    "photo": "阿爾塔 → 特羅姆瑟",
     "spots": [
       {
         "name": "北極光大教堂 Cathedral of the Northern Lights",
@@ -484,8 +557,8 @@ const groups=[
     "country": "挪威 NORWAY",
     "title": "在北極之門，看大教堂與流動的夜空",
     "subtitle": "冰山般的教堂、北方港口的燈火，以及峽灣上的極光之夜。",
-    "img": "images/aurora_night_sky.jpg",
-    "photo": "特羅姆瑟・北極大教堂與極光",
+    "img": "images/covers/day09_cover.jpg",
+    "photo": "特羅姆瑟・極光船",
     "spots": [
       {
         "name": "北極大教堂 Arctic Cathedral",
@@ -530,8 +603,8 @@ const groups=[
     "country": "挪威 NORWAY",
     "title": "從北極之門飛往挪威首都，沿著奧斯陸峽灣讀一座城市",
     "subtitle": "11月12日 10:45 搭乘 DY737 從特羅姆瑟起飛、12:45 抵達奧斯陸。下午以城市中心、海港建築與挪威美食為主，實際參訪點仍以旅行團安排為準。",
-    "img": "images/day10_oslo_opera_house.jpg",
-    "photo": "奧斯陸・歌劇院與現代海港",
+    "img": "images/covers/day10_cover.jpg",
+    "photo": "奧斯陸・城市文化",
     "routeHint": "適合下午的參考散步方向：奧斯陸中央車站 → 歌劇院周邊 → 阿克斯胡斯城堡外圍 → 奧斯陸市政廳 → Aker Brygge 港灣晚餐。孟克美術館及維格蘭雕塑公園屬時間允許時的延伸選擇，並非已確認團體停靠點。",
     "spots": [
       {
@@ -647,8 +720,11 @@ const dayDate=n=>{let d=new Date(Date.UTC(2026,10,2+n));return `${d.getUTCMonth(
 function flightCards(days){let flights=FLIGHTS.filter(f=>days.includes(f.day));if(!flights.length)return '';return `<div class="flight-section"><div class="section-heading"><h3>✈ 航班與移動</h3><small>各地機場當地時間 · 依提供的行程</small></div><div class="flight-grid">${flights.map(f=>`<article class="flight-card"><div class="flight-card-top"><span>✈ ${escapeHtml(f.airline)} <b>${escapeHtml(f.code)}</b></span><span>${escapeHtml(f.date)}</span></div><div class="flight-stations"><div><small>出發</small><strong>${escapeHtml(f.depart)}</strong><span>${escapeHtml(f.from)}</span></div><div class="flight-arrow">✈<span class="flight-dashes"></span></div><div><small>抵達 <em>${escapeHtml(f.arriveDate)}</em></small><strong>${escapeHtml(f.arrive)}</strong><span>${escapeHtml(f.to)}</span></div></div><p class="flight-note">${escapeHtml(f.note)}</p></article>`).join('')}</div></div>`}
 function airportJourney(){return `<div class="overline">FLIGHTS & TRANSFERS / 航班</div><h2>跨越國境的六段航班</h2><p class="lead">從台灣經曼谷飛往北歐，再由挪威南返。所有時間都是各機場當地時間；航班和時刻依你提供的行程資料整理，實際起降與航廈以航空公司通知為準。</p><div class="flight-journey">${FLIGHTS.map(f=>`<button type="button" class="flight-journey-row" data-day="${f.day}"><div class="journey-date"><b>DAY ${f.day}</b><small>${f.date}</small></div><div class="journey-route"><strong>${escapeHtml(f.from)} <span>→</span> ${escapeHtml(f.to)}</strong><small>${escapeHtml(f.note)}</small></div><div class="journey-code"><b>${escapeHtml(f.code)}</b><span>${escapeHtml(f.depart)} → ${escapeHtml(f.arrive)}${f.arriveDate.includes('+1')?' +1':''}</span></div><span class="journey-open">↗</span></button>`).join('')}</div><div class="data-note" style="margin-top:20px">重點轉機：11/03 曼谷 21:45 抵達、11/04 00:05 再起飛，表定間隔 2 小時 20 分；11/14 曼谷 06:20 抵達、08:10 再起飛，表定間隔 1 小時 50 分。這不是保證可轉機的時間，請以航班是否聯程、行李是否直掛及實際登機截止時間為準。</div>`}
 
-const SPOT_PHOTOS={d2:['stockholm','fika'],d3:['lulea','reindeer','snow','glass'],d4:[null,'arktikum'],d5:['santa'],d6:['crab','kirkenesHistory'],d7:['sami','sami'],d8:[null,'alta'],d9:['church','tromsoCity','auroraCruise'],d10:['osloOpera','osloFort','osloCity','akerBrygge','munch','vigeland']};
-const PHOTO_TITLES={aurora:'北歐極光夜空',stockholm:'斯德哥爾摩・黃金廳',lulea:'露利亞・冬季港灣',reindeer:'拉普蘭・馴鹿牧場',snow:'凱米・冰雪體驗館',glass:'凱米・海濱玻璃別墅',santa:'羅瓦涅米・冬季小鎮',church:'特羅姆瑟・北極教堂',alta:'阿爾塔・史前岩畫主題',crab:'基爾克內斯・帝王蟹主題',osloOpera:'奧斯陸・歌劇院',osloCity:'奧斯陸・市政廳',osloFort:'奧斯陸・阿克斯胡斯城堡',osloFood:'挪威・魚湯與棕起司鬆餅'};
+PHOTO_ASSETS.husky="images/day04_husky_farm.jpg";
+PHOTO_ASSETS.sapmiPark="images/day07_sapmi_park.jpg";
+PHOTO_ASSETS.altaCathedral="images/day08_northern_lights_cathedral.jpg";
+const SPOT_PHOTOS={d2:['stockholm','fika'],d3:['lulea','reindeer','snow','glass'],d4:['husky','arktikum'],d5:['santa'],d6:['crab','kirkenesHistory'],d7:['sami','sapmiPark'],d8:['altaCathedral','alta'],d9:['church','tromsoCity','auroraCruise'],d10:['osloOpera','osloFort','osloCity','akerBrygge','munch','vigeland']};
+const PHOTO_TITLES={husky:'哈士奇牧場',sapmiPark:'Sápmi Park',altaCathedral:'阿爾塔・北極光大教堂',aurora:'北歐極光夜空',stockholm:'斯德哥爾摩・黃金廳',lulea:'露利亞・冬季港灣',reindeer:'拉普蘭・馴鹿牧場',snow:'凱米・冰雪體驗館',glass:'凱米・海濱玻璃別墅',santa:'羅瓦涅米・冬季小鎮',church:'特羅姆瑟・北極教堂',alta:'阿爾塔・史前岩畫主題',crab:'基爾克內斯・帝王蟹主題',osloOpera:'奧斯陸・歌劇院',osloCity:'奧斯陸・市政廳',osloFort:'奧斯陸・阿克斯胡斯城堡',osloFood:'挪威・魚湯與棕起司鬆餅'};
 PHOTO_TITLES.food_d2_0='瑞典肉丸';
 PHOTO_TITLES.food_d2_1='達拉木馬';
 PHOTO_TITLES.food_d3_0='馴鹿文化';
@@ -679,7 +755,7 @@ function renderOverview(){const cards=groups.map(g=>`<button type="button" class
 function renderDay(){let g=group(current);const upper=`<div class="chapter-head"><div><div class="overline">DAY ${g.days.join('–')} · ${g.days.map(dayDate).join('–')} · ${escapeHtml(g.country)}</div><h2>${escapeHtml(g.title)}</h2><p class="lead">${escapeHtml(g.subtitle)}</p></div><span class="chapter-badge">${escapeHtml(g.place)}</span></div>`;
 const flights=flightCards(g.days);if(g.type==='flight')return upper+flights+`<div class="airport-story"><div class="airport-symbol">✈</div><h3>${g.days[0]===1?'第一天是純粹的飛行與轉機日':g.days[0]===11?'跨越時區的返家航程':'最後一段飛行，帶著回憶抵達台灣'}</h3><p>${g.days[0]===1?'這天不安排額外的觀光故事。把護照、機票與轉機動線準備好，留一些力氣迎接隔日的斯德哥爾摩。':g.days[0]===11?'這天以離開奧斯陸、辦理報到與國際航班為主。隔天早上抵達曼谷後，仍有最後一段銜接航班。':'曼谷轉機後回到桃園機場。飛行時間表採抵達地的當地日期；旅行也正式畫下句點。'}</p></div><div class="cta-row"><button class="ghost-btn" data-action="previous">← 上一站</button><button class="main-btn" data-action="next">下一站 →</button></div>`;
 if(g.pending)return upper+`<div class="empty-state">尚未確認該日細節。</div>`;
-const gallery=g.id==='d3'?`<div class="section-heading"><h3>Day 3 · 四個停靠點</h3><small>依實際行程順序：飛抵露利亞後前往芬蘭</small></div><div class="day3-gallery">${g.spots.map((p,i)=>`<button type="button" class="gallery-tile" data-photo="${SPOT_PHOTOS.d3[i]}"><img src="${PHOTO_ASSETS[SPOT_PHOTOS.d3[i]]}" alt="${escapeHtml(p.name)}" loading="lazy"/><div><strong>${escapeHtml(p.name)}</strong><small>點擊看大圖 ↗</small></div></button>`).join('')}</div>`:'';
+const gallery='';
 return upper+flights+`${g.hotel?`<div class="reveal"><strong>住宿</strong><p>${escapeHtml(g.hotel)}</p></div>`:''}${g.routeHint?`<div class="oslo-route-hint"><b>🗺️ 下午參考路線</b><p>${escapeHtml(g.routeHint)}</p></div>`:''}<div class="feature-photo" role="img" aria-label="${escapeHtml(g.photo)}" style="background-image:linear-gradient(0deg,#092c3b33,#092c3b18),url('${g.img}')"><div class="photo-label">${escapeHtml(g.photo)}</div></div>${gallery}<div class="section-heading"><h3>這一站的故事</h3><small>${g.spots.length} 個探索主題 · 點開細讀</small></div><div class="spots">${g.spots.map((s,i)=>`<section class="spot"><div class="spot-num">STORY ${String(i+1).padStart(2,'0')}</div><h4>${escapeHtml(s.name)}</h4>${(SPOT_PHOTOS[g.id]||[])[i]===null?'':`<button type="button" class="spot-photo" data-photo="${((SPOT_PHOTOS[g.id]||[])[i]||'aurora')}" style="background-image:url('${PHOTO_ASSETS[((SPOT_PHOTOS[g.id]||[])[i]||'aurora')]}')" aria-label="放大${escapeHtml(s.name)}圖片"><span class="spot-caption">${escapeHtml(s.name)}</span><span class="spot-zoom">⊕ 點擊放大</span></button>`}<p>${escapeHtml(s.desc)}</p><details class="reveal"><summary>✦ 打開一個北歐趣聞</summary><p>${escapeHtml(s.story)}</p></details><div class="spot-hint">📍 觀察小提醒：${escapeHtml(s.tip)}</div></section>`).join('')}</div><div class="section-divider"></div><div class="section-heading"><h3>值得嚐嚐・值得收藏</h3></div><div class="food-grid">${foodCards(g)}</div><div class="cta-row"><button class="ghost-btn" data-action="previous">← 上一站</button><button class="main-btn" data-action="next">下一站 →</button></div>`}
 function renderAurora(){return `<div class="overline">THE AURORA LAB</div><h2>極光是如何形成的？</h2><p class="lead">透過簡單的科學知識與互動問答，在追光之前認識天空中的綠色光幕。</p><div class="section-heading"><h3>極光顏色解密</h3><small>高度為概略值</small></div><div class="science-grid"><div class="science"><div class="swatch" style="background:#5fcd8b"></div><h3>綠色極光</h3><p>約100–150公里高度，氧原子受激發後放出綠光；也是最常見的顏色之一。</p></div><div class="science"><div class="swatch" style="background:#ed827f"></div><h3>紅色極光</h3><p>較高空、通常約200公里以上的氧原子能產生深紅色光芒。</p></div><div class="science"><div class="swatch" style="background:#b59df6"></div><h3>紫色／藍色</h3><p>與氮分子及離子的發光有關，常出現在快速變化的極光邊緣。</p></div></div><div class="section-heading"><h3>追光迷思小測驗</h3><small>選一個答案，立即揭曉</small></div><div id="quiz"></div><div class="data-note" style="margin-top:18px">觀測提醒：極光活動、雲量、黑暗程度與光害都會影響可見性；相機長曝光常比肉眼顯示更多顏色。極光船與玻璃屋都不保證看到極光。</div>`}
 const quizzes=[{q:'為什麼相機拍到的極光，常比肉眼看見的鮮豔？',options:['相機能累積更多光線','極光只會對相機發光','玻璃鏡頭會製造綠色'],answer:0,why:'肉眼在低光下的色彩辨識能力下降，相機則能透過較長曝光或感光處理呈現更多顏色。'},{q:'看到很強的極光活動預報，就一定能看到極光嗎？',options:['一定可以','不一定，厚雲和光害仍可能遮擋','只要在海上就可以'],answer:1,why:'即使太陽活動很強，若當地被厚雲覆蓋，仍可能看不到極光。'},{q:'最常見的綠色極光，主要與哪種大氣成分有關？',options:['氧','海鹽','二氧化碳'],answer:0,why:'高層大氣中的氧原子受到能量激發，會在特定波長發出綠色光。'}];let quizAnswers={};
