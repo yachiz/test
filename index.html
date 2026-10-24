@@ -132,6 +132,24 @@ img{max-width:100%}
   .photo-card img{height:94px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
+
+/* Preserve the full composition of user-supplied photos. */
+.feature-photo,.spot-photo,.overview-cover{
+  background-size:contain;background-repeat:no-repeat;background-position:center;
+  background-color:#e8efee;
+}
+.feature-photo,.spot-photo{height:auto;aspect-ratio:4/3}
+.overview-cover{height:auto;aspect-ratio:4/3}
+.gallery-tile img,.photo-card img{
+  height:auto;aspect-ratio:4/3;object-fit:contain;background:#e8efee;
+}
+.food-picture img{object-fit:contain;background:#e8efee}
+.food-picture:hover img{transform:none}
+@media(max-width:720px){
+  .feature-photo,.spot-photo{height:auto;aspect-ratio:4/3}
+  .overview-cover,.gallery-tile img,.photo-card img{height:auto;aspect-ratio:4/3}
+}
+
 </style>
 </head>
 <body><div class="shell"><header class="topbar"><div class="brand"><span class="brand-icon">✦</span><span>AURORA ATLAS <span style="font-weight:500;color:#77919d;font-size:12px;margin-left:5px">北歐旅行手帳</span></span></div><div class="top-tag">SWEDEN · FINLAND · NORWAY</div></header><section class="hero"><div class="eyebrow">ARCTIC JOURNAL · 12 DAYS</div><h1>沿著極光，走進北方的故事。</h1><p>從瑞典的諾貝爾殿堂，到芬蘭馴鹿與雪城堡，再走向挪威峽灣。按日期探索每個停靠點、打開隱藏的歷史趣聞，留下自己的北歐旅行收藏。</p><div class="hero-stats"><span class="stat"><b>12</b> 日 · 11/03–11/14</span><span class="stat"><b>3</b> 個北歐國家</span><span class="stat"><b>7</b> 晚追光（原行程描述）</span></div></section><nav class="tabs" id="tabs" aria-label="探索分類"></nav><div class="mobile-daynav" id="mobileDayNav"></div><div class="layout"><aside class="panel left"><div class="panel-title">YOUR JOURNEY · 行程日期</div><div class="daynav" id="dayNav"></div></aside><main class="primary"><div class="panel chapter" id="content"></div></main><aside class="right"><div class="panel side-card"><div class="panel-title">ROUTE OVERVIEW · 路線</div><div class="mini-route" id="route"></div></div><div class="panel side-card"><h3>✦ 我的旅行探索進度</h3><div id="sideProgress" class="hint"></div><div class="bar" style="margin:11px 0"><span id="sideBar" style="width:0"></span></div><button type="button" class="ghost-btn" onclick="navigate('checklist')">查看旅行清單 ↗</button></div></aside></div></div><div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="圖片放大檢視"><button type="button" class="lightbox-close" data-close-photo aria-label="關閉圖片">×</button><div class="lightbox-inner"><img id="lightboxImg" alt="旅行圖片"/><div class="lightbox-bottom"><span id="lightboxTitle"></span></div></div></div><script>
