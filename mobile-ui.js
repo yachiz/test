@@ -48,10 +48,9 @@
     tools.innerHTML=btn('weather','☁ 天氣',count+' 個城市')+btn('transport','⌖ 交通／地圖',flight?'含航班資訊':'今日移動路線')+(hotel?btn('hotel','⌂ 住宿',state.group.hotel):'');
     content.querySelector('.chapter-head').after(tools);
     content.querySelectorAll('.spot').forEach((spot,i)=>{
-      const details=document.createElement('details');details.className='mobile-story';details.open=i===0;
+      const details=document.createElement('details');details.className='mobile-story';details.open=true;
       const summary=document.createElement('summary');summary.innerHTML=`<span class="mobile-story-number">${String(i+1).padStart(2,'0')}</span><span>${esc(state.group.spots[i].name.replace(/^[①②③④⑤⑥]\s*/,''))}</span><span class="mobile-story-toggle" aria-hidden="true"></span>`;
       spot.before(details);details.append(summary,spot);
-      details.addEventListener('toggle',()=>{if(details.open)content.querySelectorAll('.mobile-story').forEach(other=>{if(other!==details)other.open=false;});});
     });
   }
   function goDay(day){if(day<1||day>12)return;const group=state.groups.find(g=>g.days.includes(day));if(group){close();window.navigate('day',group.id);}}
