@@ -1,0 +1,10 @@
+.travel-weather{margin:22px 0 24px}
+.weather-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.weather-heading h3{font-size:16px;margin:0}.weather-heading>span{font-size:10px;color:#758d94}
+.weather-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.weather-card{border:1px solid #dce8e9;border-radius:13px;padding:15px;background:linear-gradient(135deg,#eef7f8,#fff 85%);min-width:0}
+.weather-city{display:flex;align-items:center;justify-content:space-between;gap:8px}.weather-city strong{font-size:13px}.weather-badge{color:#277c79;background:#e1f1ee;padding:3px 7px;border-radius:7px;font-size:10px;white-space:nowrap}.weather-badge.is-history{background:#eeeae1;color:#81704b}
+.weather-main{display:flex;align-items:center;gap:10px;margin:13px 0 10px}.weather-icon{font-size:31px;line-height:1}.weather-temperature{font-size:26px;font-weight:750;line-height:1.2;letter-spacing:-.04em;font-variant-numeric:tabular-nums}.weather-temperature>span{color:#8aa1a5;font-weight:400;font-size:18px}.weather-main p{font-size:11px;color:#68838b;margin:5px 0 0}
+.weather-metrics{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:11px;color:#456b76;line-height:1.6}.weather-stamp{color:#8b9da2;font-size:10px;margin:11px 0 0;line-height:1.5}.weather-message{font-size:12px;color:#738b94;margin:15px 0 3px;line-height:1.7;min-height:42px}
+.weather-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px 12px;font-size:10px;color:#83979c;margin-top:9px}.weather-source a{color:#6a898c}.weather-source details{font-size:10px}.weather-source summary{cursor:pointer}.weather-source details p{max-width:540px;font-size:11px;line-height:1.7;margin:7px 0;color:#6f858b}
+@media(max-width:720px){#content{touch-action:pan-y pinch-zoom}.weather-grid{grid-template-columns:1fr}.weather-card{padding:13px 14px}.weather-heading{align-items:baseline}.weather-heading>span{font-size:9px}.weather-main{margin:10px 0}.weather-temperature{font-size:28px}}
