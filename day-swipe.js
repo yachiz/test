@@ -3,7 +3,7 @@
   'use strict';
   const pane=document.getElementById('content');
   if(!pane)return;
-  const blocked='button,a,input,select,textarea,summary,details,.journey-map,.hotel-photo,.spot-photo,.food-picture,[data-photo]';
+  const blocked='button,a,input,select,textarea,summary,.journey-map,.hotel-photo,.spot-photo,.food-picture,[data-photo]';
   let gesture=null,ignoreClickUntil=0;
   function mobile(){return window.matchMedia('(max-width:720px)').matches;}
   function activeDay(){const selected=document.querySelector('.mobile-daynav button.active[data-day]');return selected?Number(selected.dataset.day):null;}
@@ -13,7 +13,7 @@
   }
   pane.addEventListener('touchstart',e=>{
     gesture=null;
-    if(!mobile()||e.touches.length!==1||!activeDay()||document.querySelector('.lightbox.show')||e.target.closest(blocked))return;
+    if(!mobile()||e.touches.length!==1||!activeDay()||(document.querySelector('.lightbox.show')||document.querySelector('dialog[open]'))||e.target.closest(blocked))return;
     const t=e.touches[0];
     // Keep the browser's edge back/forward gesture available.
     if(t.clientX<25||t.clientX>window.innerWidth-25)return;
@@ -28,7 +28,7 @@
   pane.addEventListener('touchcancel',()=>{gesture=null;},{passive:true});
   pane.addEventListener('touchend',e=>{
     const start=gesture;gesture=null;
-    if(!start||e.touches.length||!mobile()||activeDay()!==start.day||document.querySelector('.lightbox.show'))return;
+    if(!start||e.touches.length||!mobile()||activeDay()!==start.day||(document.querySelector('.lightbox.show')||document.querySelector('dialog[open]')))return;
     const t=e.changedTouches[0];if(!t)return;
     const direction=swipeDirection(start,{x:t.clientX,y:t.clientY,time:Date.now()}),day=start.day+direction;
     if(!direction||day<1||day>12)return;

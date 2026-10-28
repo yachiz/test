@@ -121,7 +121,7 @@
       const result=await getWeather(city,date,mode);
       if(token!==generation||!region.isConnected)return;
       const card=region.querySelector(`[data-weather-city="${city}"]`);
-      if(card)card.innerHTML=cardHTML(city,result);
+      if(card){card.innerHTML=cardHTML(city,result);document.dispatchEvent(new Event('aurora-weather-updated'));}
     }));
   }
   window.AuroraWeather={placeholder:day=>placeholder(day).replace('class="travel-weather"',`class="travel-weather" data-weather-day="${day}"`),load};
