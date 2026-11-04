@@ -335,6 +335,44 @@ img{max-width:100%}
   .food b,.reveal summary {font-size:15px}
   .chapter h2 {font-size:30px}
 }
+
+/* Comfortable mobile article rhythm — November 2026 */
+@media (max-width:720px) {
+  .chapter {background:#fff;line-height:1.8}
+  .chapter-head {margin-bottom:4px}
+  .chapter h2 {letter-spacing:0.005em;overflow-wrap:break-word}
+  .lead,.chapter-head .lead {color:#4b626d}
+  .section-heading {margin:27px 0 14px;align-items:center}
+  .section-heading h3 {color:#183f47;letter-spacing:0.005em}
+  .mobile-story {margin-bottom:15px;border-color:#d6e5e3;box-shadow:0 3px 10px rgba(14,53,61,.035)}
+  .mobile-story>summary {padding:17px 14px;gap:11px;background:#f6faf8;color:#173f48}
+  .mobile-story[open]>summary {border-bottom:1px solid #e3eeeb}
+  .mobile-story .spot {padding:17px 14px 18px}
+  .mobile-story .spot p {color:#344d56;margin:0 0 16px;line-height:1.86;letter-spacing:.01em}
+  .mobile-story .spot p:last-child {margin-bottom:0}
+  .mobile-story .spot-photo {margin:0 0 18px;border-radius:10px}
+  .mobile-story .spot-hint {margin-top:15px;padding:13px 14px;background:#f1f6f5;color:#385b62}
+  .mobile-story .reveal {margin:16px 0;padding:15px 14px;background:#edf7f3}
+  .mobile-story .reveal p {color:#34565b;line-height:1.85;margin:13px 0 2px}
+  .mobile-day-tools {margin:17px 0 22px}
+  .mobile-day-tools button {background:#f8fbfa;border-color:#d6e5e2}
+  .mobile-day-tools strong {color:#274f55}
+  .mobile-date-control strong {letter-spacing:0}
+  .mobile-date-control small {color:#506f77}
+  .mobile-bottom-nav button {color:#526c76}
+  .food {gap:13px;padding:13px;border-color:#dce8e7;background:#fff}
+  .food-grid {gap:13px}
+  .food-content b {color:#183f47;margin-bottom:6px}
+  .food-content p {color:#3f5b65}
+  .overview-body {padding:13px 14px}
+  .overview-body p {color:#506e77}
+  .photo-card .photo-card-label {line-height:1.5}
+  .checkitem {line-height:1.65;min-height:50px}
+  .flight-note,.data-note,.source-note {line-height:1.8}
+  .quizcard {padding:18px 15px}
+  .quizchoices {gap:10px}
+  .science {padding:19px 17px}
+}
 </style>
 </head>
 <body><div class="shell"><header class="topbar"><div class="brand"><span class="brand-icon">✦</span><span>AURORA ATLAS <span style="font-weight:500;color:#77919d;font-size:12px;margin-left:5px">北歐旅行手帳</span></span></div><div class="top-tag">SWEDEN · FINLAND · NORWAY</div></header><section class="hero"><div class="eyebrow">ARCTIC JOURNAL · 12 DAYS</div><h1>沿著極光，走進北方的故事。</h1><p>從瑞典的諾貝爾殿堂，到芬蘭馴鹿與雪城堡，再走向挪威峽灣。按日期探索每個停靠點、打開隱藏的歷史趣聞，留下自己的北歐旅行收藏。</p><div class="hero-stats"><span class="stat"><b>12</b> 日 · 11/03–11/14</span><span class="stat"><b>3</b> 個北歐國家</span></div></section><nav class="tabs" id="tabs" aria-label="探索分類"></nav><div class="mobile-daynav" id="mobileDayNav"></div><div class="layout"><aside class="panel left"><div class="panel-title">YOUR JOURNEY · 行程日期</div><div class="daynav" id="dayNav"></div></aside><main class="primary"><div class="panel chapter" id="content"></div></main><aside class="right"><div class="panel side-card"><div class="panel-title">ROUTE OVERVIEW · 路線</div><div class="mini-route" id="route"></div></div><div class="panel side-card"><h3>✦ 我的旅行探索進度</h3><div id="sideProgress" class="hint"></div><div class="bar" style="margin:11px 0"><span id="sideBar" style="width:0"></span></div><button type="button" class="ghost-btn" onclick="navigate('checklist')">查看旅行清單 ↗</button></div></aside></div></div><div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="圖片放大檢視"><button type="button" class="lightbox-close" data-close-photo aria-label="關閉圖片">×</button><div class="lightbox-inner"><img id="lightboxImg" alt="旅行圖片"/><div class="lightbox-bottom"><span id="lightboxTitle"></span></div></div></div><script src="weather.js"></script>
