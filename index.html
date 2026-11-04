@@ -263,6 +263,79 @@ img{max-width:100%}
 </style>
 <link rel="stylesheet" href="weather.css">
 <link rel="stylesheet" href="mobile-ui.css">
+
+<!-- Mobile legibility improvement: preserve layout and image aspect ratios -->
+<style id="readability-20261104">
+@media (max-width:720px) {
+  body {font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%}
+  .mobile-brand {font-size:15px}
+  .mobile-brand>span {font-size:12px}
+  .mobile-date-control strong {font-size:16px;line-height:1.4}
+  .mobile-date-control small {font-size:13px;line-height:1.45}
+  .mobile-bottom-nav button {font-size:12px;line-height:1.3}
+  .mobile-bottom-nav button>span {font-size:21px}
+  .mobile-day-tools {gap:7px}
+  .mobile-day-tools button {min-height:70px;padding:10px 8px}
+  .mobile-day-tools strong {font-size:14px;white-space:normal;overflow-wrap:anywhere;line-height:1.4}
+  .mobile-day-tools small {font-size:12px;line-height:1.4;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+  .hero h1 {font-size:clamp(27px,7vw,34px)}
+  .hero .eyebrow,.eyebrow {font-size:12px}
+  .stat {font-size:13px}.stat b {font-size:18px}
+  .chapter {padding:20px 16px}
+  .chapter h2 {font-size:clamp(26px,6.5vw,32px);line-height:1.35}
+  .chapter-head .lead,.lead {font-size:16px;line-height:1.8}
+  .section-heading h3 {font-size:19px;line-height:1.4}
+  .section-heading small {font-size:13px}
+  .mobile-story>summary {font-size:17px;line-height:1.5;min-height:62px;padding:15px 13px}
+  .mobile-story-number {font-size:13px}
+  .mobile-story .spot p,.spot p {font-size:16px;line-height:1.85}
+  .spot h4 {font-size:19px}
+  .mobile-story .spot-hint,.spot-hint {font-size:15px;line-height:1.75}
+  .mobile-story .reveal summary,.reveal summary {font-size:16px;line-height:1.5}
+  .mobile-story .reveal p,.reveal p {font-size:16px;line-height:1.8}
+  .spot-num,.photo-disclaimer,.source-note {font-size:13px}
+  .food b,.food-content b {font-size:17px;line-height:1.45}
+  .food p,.food-content p {font-size:15px;line-height:1.75}
+  .overview-body small {font-size:12px;line-height:1.4}
+  .overview-body strong {font-size:17px;line-height:1.4}
+  .overview-body p {font-size:14px;line-height:1.6}
+  .overview-item {min-height:112px}
+  .overview-cover {min-height:112px}
+  .panel-title,.chapter .overline {font-size:13px}
+  .data-note,.hint,.map-footer p,.map-key {font-size:14px;line-height:1.7}
+  .map-heading strong {font-size:16px}
+  .map-heading span {font-size:12px}
+  .map-footer a {font-size:14px}
+  .flight-card-top,.flight-note,.flight-stations span,.flight-stations small,.flight-stations em {font-size:13px}
+  .journey-date b,.journey-date small,.journey-code span,.journey-route small {font-size:13px}
+  .hotel-info h3 {font-size:20px}
+  .hotel-city,.hotel-address,.hotel-links a,.hotel-map-key a {font-size:14px}
+  .hotel-eyebrow,.hotel-map-key small {font-size:12px}
+  .quizcard h3,.science h3 {font-size:18px}
+  .quizchoice {font-size:16px;min-height:48px}
+  .quizfeedback,.science p,.checkitem,.ghost-btn,.main-btn {font-size:15px}
+  .photo-card .photo-card-label,.gallery-tile strong {font-size:14px}
+  .gallery-tile small {font-size:12px}
+  .mobile-overview-tools button {font-size:15px}
+  .mobile-overview-tools span {font-size:13px}
+  .mobile-days-grid strong,.mobile-days-grid span {font-size:14px}
+  .mobile-menu-grid button {font-size:16px}
+  .mobile-sheet-top h2 {font-size:20px}
+  .weather-heading h3 {font-size:18px}
+  .weather-heading>span,.weather-city strong,.weather-main p,.weather-metrics,.weather-message,.weather-stamp,.weather-source,.weather-source details,.weather-source details p {font-size:13px}
+  .weather-badge {font-size:12px}
+  .weather-temperature {font-size:30px}
+  .flight-stations,.flight-journey-row,.flight-grid,.food,.hotel-card {min-width:0}
+  .chapter,.panel,.food,.overview-body {overflow-wrap:break-word}
+}
+@media (min-width:721px) and (max-width:1099px) {
+  .spot p,.reveal p,.food p {font-size:15px;line-height:1.8}
+  .lead {font-size:16px}
+  .day-name,.route-link,.hint,.checkitem {font-size:14px}
+  .food b,.reveal summary {font-size:15px}
+  .chapter h2 {font-size:30px}
+}
+</style>
 </head>
 <body><div class="shell"><header class="topbar"><div class="brand"><span class="brand-icon">✦</span><span>AURORA ATLAS <span style="font-weight:500;color:#77919d;font-size:12px;margin-left:5px">北歐旅行手帳</span></span></div><div class="top-tag">SWEDEN · FINLAND · NORWAY</div></header><section class="hero"><div class="eyebrow">ARCTIC JOURNAL · 12 DAYS</div><h1>沿著極光，走進北方的故事。</h1><p>從瑞典的諾貝爾殿堂，到芬蘭馴鹿與雪城堡，再走向挪威峽灣。按日期探索每個停靠點、打開隱藏的歷史趣聞，留下自己的北歐旅行收藏。</p><div class="hero-stats"><span class="stat"><b>12</b> 日 · 11/03–11/14</span><span class="stat"><b>3</b> 個北歐國家</span></div></section><nav class="tabs" id="tabs" aria-label="探索分類"></nav><div class="mobile-daynav" id="mobileDayNav"></div><div class="layout"><aside class="panel left"><div class="panel-title">YOUR JOURNEY · 行程日期</div><div class="daynav" id="dayNav"></div></aside><main class="primary"><div class="panel chapter" id="content"></div></main><aside class="right"><div class="panel side-card"><div class="panel-title">ROUTE OVERVIEW · 路線</div><div class="mini-route" id="route"></div></div><div class="panel side-card"><h3>✦ 我的旅行探索進度</h3><div id="sideProgress" class="hint"></div><div class="bar" style="margin:11px 0"><span id="sideBar" style="width:0"></span></div><button type="button" class="ghost-btn" onclick="navigate('checklist')">查看旅行清單 ↗</button></div></aside></div></div><div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="圖片放大檢視"><button type="button" class="lightbox-close" data-close-photo aria-label="關閉圖片">×</button><div class="lightbox-inner"><img id="lightboxImg" alt="旅行圖片"/><div class="lightbox-bottom"><span id="lightboxTitle"></span></div></div></div><script src="weather.js"></script>
 <script src="mobile-ui.js"></script>
